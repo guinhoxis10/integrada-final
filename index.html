@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio e Currículo Interativo (Tarefa Senac)</title>
+    <title>Portfólio e Currículo Interativo </title>
 
     <style>
-        /* Estilos Globais */
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e9ecef;
+            background-color: #000000;
             color: #343a40;
             line-height: 1.6;
         }
 
         header {
-            background-color: #004d99; /* Cor principal Senac */
-            color: white;
+            background-color: #004d99; 
+            color: rgb(0, 0, 0);
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -36,8 +36,8 @@
         }
 
         .nav-button, .project-link {
-            background-color: #ffcc00; /* Cor de Destaque */
-            color: #333;
+            background-color: #4c76ff; 
+            color: #ffffff;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
@@ -49,21 +49,21 @@
             text-align: center;
         }
 
-        .nav-button:hover, .project-link:hover {
-            background-color: #e6b800;
+        .nav-button:hover, .project-link:hover 
+        {
+            background-color: #0e0e0e;
             transform: translateY(-2px);
         }
 
-        /* Estilo para o novo botão de Salvar/Imprimir */
         #save-curriculum-button {
-            background-color: #28a745; /* Cor verde para ação de salvar */
-            color: white;
+            background-color: #4c76ff; 
+            color: rgb(255, 255, 255);
             margin-top: 20px;
             padding: 12px 25px;
             font-size: 1.1em;
         }
         #save-curriculum-button:hover {
-            background-color: #218838;
+            background-color: #4c76ff;
         }
 
 
@@ -74,7 +74,7 @@
         }
 
         section {
-            background-color: white;
+            background-color: rgb(100, 100, 100);
             padding: 40px;
             margin-bottom: 30px;
             border-radius: 10px;
@@ -83,12 +83,11 @@
 
         h2 {
             color: #004d99;
-            border-bottom: 2px solid #ffcc00;
+            border-bottom: 2px solid #000000;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
 
-        /* Estrutura de Projetos */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,10 +96,10 @@
         }
 
         .project-card {
-            border: 1px solid #ccc;
+            border: 1px solid #000000;
             padding: 15px;
             border-radius: 8px;
-            background-color: #f8f9fa;
+            background-color: #a1a1a1;
             text-align: center;
             transition: box-shadow 0.3s;
         }
@@ -114,41 +113,36 @@
             margin-top: 0;
         }
 
-        /* Estilos de Conteúdo */
         #curriculo-page ul {
             list-style: none;
             padding: 0;
         }
         #curriculo-page li {
             margin-bottom: 10px;
-            border-left: 3px solid #ffcc00;
+            border-left: 3px solid #000000;
             padding-left: 15px;
         }
         
-        /* Foto do Currículo */
         #profile-photo {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Torna a imagem redonda */
+            border-radius: 50%; 
             object-fit: cover;
             margin-bottom: 20px;
             border: 4px solid #004d99;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        /* Oculta o Currículo por padrão */
         #curriculo-page {
             display: none;
         }
         
-        /* Oculta botões de navegação na versão impressa (PDF) */
         @media print {
             header, .navbar, .nav-button, .project-link, #save-curriculum-button, .content-page:not(#curriculo-page) {
                 display: none;
             }
             #curriculo-page {
                 display: block !important;
-                /* Reseta estilos de layout para impressão */
                 box-shadow: none;
                 padding: 0;
                 margin: 0;
@@ -173,48 +167,48 @@
             
             <section id="home">
                 <h2>🏠 Home</h2>
-                <p>Bem-vindo ao meu portfólio. Este projeto demonstra minhas habilidades em HTML, CSS e JavaScript. Utilize os links abaixo para acessar os trabalhos de cada matéria em PDF.</p>
+                <p>Bem-vindo ao meu portfólio. Nele mostra minhas habilidades em HTML, CSS e JavaScript. Utilizei os links abaixo para acessar os trabalhos de cada matéria.</p>
             </section>
             
             <section id="sobre">
                 <h2>👤 Sobre</h2>
-                <p>Sou um(a) estudante/profissional focado(a) em [Sua Área de Foco]. Clique nos cards de projetos para ver os relatórios ou documentos em formato **PDF**.</p>
+                <p>Sou um estudante/profissional focado em aprender cada vez mais. Clique nos cards de projetos para ver os documentos de algumas lições de cada matéria.</p>
             </section>
 
             <section id="projetos">
                 <h2>✨ Projetos por Área do Conhecimento</h2>
-                <p>Clique em um projeto para abrir o arquivo PDF correspondente em uma nova aba:</p>
+                <p>Clique em um projeto para abrir o arquivo correspondente em uma nova aba:</p>
                 
                 <div class="projects-grid">
                     
                     <div class="project-card">
                         <h3>Linguagens</h3>
-                        <p>Análise de Mídia e Comunicação.</p>
-                        <a href="Trabalho_Linguagens.pdf" target="_blank" class="project-link">Abrir PDF</a>
+                        <p>Atividade integrada de linguagens do 3° bimestre.</p>
+                        <a href="https://www.canva.com/design/DAGx34DVVDE/JaSxpgUPSurrDuH0FsTNVA/edit?utm_content=DAGx34DVVDE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">Abrir PDF</a>
                     </div>
                     
                     <div class="project-card">
                         <h3>Ciências da Natureza</h3>
-                        <p>Relatório de Eletroquímica.</p>
-                        <a href="Trabalho_CN.pdf" target="_blank" class="project-link">Abrir PDF</a>
+                        <p>Atividade ácido carboxílico.</p>
+                        <a href="https://www.canva.com/design/DAG4-XSqZ0U/9B3olSr_YZjtbRckcfO4RQ/edit?utm_content=DAG4-XSqZ0U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">Abrir PDF</a>
                     </div>
 
                     <div class="project-card">
                         <h3>Ciências Humanas</h3>
-                        <p>Estudo Sociológico Urbano.</p>
-                        <a href="Trabalho_CH.pdf" target="_blank" class="project-link">Abrir PDF</a>
+                        <p>Atividade sobre lei de terra.</p>
+                        <a href="https://www.canva.com/design/DAGWMmL0l70/JT_b-wWXy9IxW1zKNa-DmQ/edit?utm_content=DAGWMmL0l70&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">Abrir PDF</a>
                     </div>
 
                     <div class="project-card">
                         <h3>Matemática</h3>
-                        <p>Modelagem Financeira (Funções).</p>
-                        <a href="Trabalho_Matematica.pdf" target="_blank" class="project-link">Abrir PDF</a>
+                        <p>Lição sobre volume.</p>
+                        <a href="c:\Users\thiago.hhando\Downloads\Geometria espacial - exercícios de 7, 11 e 15 1.jpeg" target="_blank" class="project-link">Abrir PDF</a>
                     </div>
 
                     <div class="project-card">
                         <h3>Formação Técnica Profissional (T.I.)</h3>
-                        <p>Documentação do Projeto Web.</p>
-                        <a href="Trabalho_FTP.pdf" target="_blank" class="project-link">Abrir PDF</a>
+                        <p>Atividade de banco de dados.</p>
+                        <a href="https://www.canva.com/design/DAG4-SxB3vA/E2hbiccnvYjxV3yuDVVd-Q/edit?utm_content=DAG4-SxB3vA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">Abrir PDF</a>
                     </div>
                 </div>
             </section>
@@ -222,29 +216,31 @@
 
         <div id="curriculo-page" class="content-page">
             <section style="text-align: center;">
-                <h2>📝 Currículo Profissional Interativo</h2>
+                <h2>📝 Currículo Profissional </h2>
                 
-                <img id="profile-photo" src="sua-foto.jpg" alt="Foto de Perfil">
+                <img id="profile-photo" src="c:\Users\thiago.hhando\OneDrive - SENAC - SP\Imagens\Capturas de tela\foto.png" alt="Foto de Perfil">
                 
-                <h3 id="nome-curriculo" onclick="changeNameText()" style="color: #343a40; cursor: pointer;">Seu Nome Completo</h3>
-                <p>E-mail: seu.email@exemplo.com | Telefone: (XX) XXXX-XXXX</p>
+                <h3 id="nome-curriculo" onclick="changeNameText()" style="color: #343a40; cursor: pointer;">Thiago Hideki Hara Ando</h3>
+                <p>E-mail: pessoalthiagohideki@gmail.com | Telefone: (11) 97066-1880</p>
                 
                 <div style="text-align: left; margin: 0 auto; max-width: 600px;">
                     <h3>Experiência Profissional</h3>
                     <ul>
-                        <li>**Cargo/Função** (Empresa, Ano) - Detalhes da experiência.</li>
+                        <li>Jovem aprendiz na Toyota - Atual.</li>
                     </ul>
 
                     <h3>Formação</h3>
                     <ul>
-                        <li>**Ensino Médio e Técnico** (Senac, Ano)</li>
+                        <li>Ensino Médio e Técnico em TI (Senac, 2023 - 2025)</li>
                     </ul>
                     
                     <h3>Habilidades Técnicas</h3>
-                    <button class="nav-button" onclick="toggleSkills()" style="margin-bottom: 15px;">Ação JS: Mostrar/Ocultar Habilidades</button>
+                    <button class="nav-button" onclick="toggleSkills()" style="margin-bottom: 15px;">Mostrar/Ocultar Habilidades</button>
                     <ul id="tech-skills" style="display: none;">
                         <li>HTML5, CSS3, JavaScript</li>
                         <li>Lógica de Programação</li>
+                        <li>Banco de dados</li>
+                        <li>Redes</li>
                     </ul>
                 </div>
                 
@@ -252,23 +248,18 @@
                     💾 Salvar/Imprimir Currículo (PDF)
                 </button>
                 
-                <button class="nav-button" onclick="showSection('home-page')" style="margin-top: 20px;">
-                    ⬅️ Retornar ao Portfólio
-                </button>
             </section>
         </div>
         
     </main>
 
     <script>
-        // Função para alternar entre as grandes seções (Portfólio vs. Currículo)
         function showSection(targetId) {
-            // Oculta todas as páginas de conteúdo
             document.querySelectorAll('.content-page').forEach(page => {
                 page.style.display = 'none';
             });
 
-            // Exibe a página alvo
+       
             const targetPage = document.getElementById(targetId);
             if (targetPage) {
                 targetPage.style.display = 'block';
@@ -276,20 +267,12 @@
             }
         }
         
-        /* ---------------------------------------------------- */
-        /* FUNÇÃO PARA SALVAR/IMPRIMIR */
-        /* ---------------------------------------------------- */
         function printCurriculum() {
-            // Abre a janela de impressão do navegador.
-            // O usuário pode selecionar "Salvar como PDF" nas opções de destino.
+
             window.print();
         }
 
-        /* ---------------------------------------------------- */
-        /* FUNÇÕES JAVASCRIPT NO CURRÍCULO INTERATIVO */
-        /* ---------------------------------------------------- */
 
-        // Ação JS 1: Altera o texto do nome ao clicar
         function changeNameText() {
             const nome = document.getElementById('nome-curriculo');
             if (nome.textContent === 'Seu Nome Completo') {
@@ -299,7 +282,6 @@
             }
         }
         
-        // Ação JS 2: Exibe/Oculta uma lista de habilidades
         function toggleSkills() {
             const skills = document.getElementById('tech-skills');
             if (skills.style.display === 'none') {
@@ -309,7 +291,6 @@
             }
         }
 
-        // Garante que o Portfólio seja a página inicial ao carregar
         document.addEventListener('DOMContentLoaded', () => {
              showSection('home-page');
         });
